@@ -235,3 +235,8 @@ span {
 		font-size: 22px;
 	}
 }
+/*Contact*/
+.contact-list{
+	display: flex;
+	columns: inherit;
+}
