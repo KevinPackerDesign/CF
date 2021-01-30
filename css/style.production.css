@@ -313,3 +313,12 @@ span {
 		font-size: 22px;
 	}
 }
+/*Contact*/
+.contact-list{
+	clear: both;
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	width: 250px;
+	padding-left: 15px;
+}
