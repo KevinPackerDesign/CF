@@ -179,6 +179,9 @@ span {
 	100% {
 		fill: #f76414;
 	}
+.exp-table{
+	padding-left: 150px;
+	text-align: center;
 }
 
 @keyframes color-change {
