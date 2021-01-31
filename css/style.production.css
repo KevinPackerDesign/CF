@@ -79,6 +79,9 @@ button:focus,
 	opacity: 0.8;
 	border-radius: 50%;
 }
+.button_secondary__link{
+	padding-left: 15px;
+}
 .button_secondary {
 	background-color: red;
 	color: black;
@@ -101,6 +104,8 @@ button:focus,
 }
 .page-header__item {
 	flex: 0 1 75px;
+	width: 120px;
+	height: 100px;
 }
 .page-header__item:last-child {
 	flex-grow: 1;
