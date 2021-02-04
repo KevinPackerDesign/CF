@@ -15,6 +15,7 @@ body {
 	box-sizing: border-box;
 }
 .intro{
+	display: inline-block;
 	padding-top: 25px;
 }
 div {
@@ -238,12 +239,62 @@ span {
 		font-size: 22px;
 	}
 }
+/*dnd page*/
+.dd_grid__item {
+	display: inline-block;
+	width: 33%;
+}
+@supports (display: grid) {
+	.dd_grid {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-gap: none;
+	}
+	.dd_grid__item {
+		width: auto;
+		min-height: auto;
+		margin: 0px;
+		text-align: center;
+	}
+	.dd_grid__item:last-child {
+		grid-column: 3/3;
+		grid-row: 3/4;
+	}
+}
+@media all and (max-width: 500px) {
+	.dd_grid {
+		grid-template-columns: 1fr;
+	}
+}
+@media all and (min-width: 500px) and (max-width: 750px) {
+	.dd_grid {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+@media all and (max-width: 750px) {
+	.dd_grid {
+		grid-gap: 0px;
+	}
+	.dd_grid__item:last-child {
+		grid-column: auto / auto;
+		grid-row: auto / auto;
+	}
+	h1 {
+		font-size: 22px;
+	}
+}
+.dd_text{
+	text-align: center;
+}
 /*Contact*/
+.contact-list-main{
+	text-align: center;
+}
 .contact-list{
 	clear: both;
-	display: flex;
+	display: inline-block;
 	flex-direction: column;
-	text-align: left;
+	text-align: center;
 	width: 250px;
-	padding-left: 15px;
+	
 }
